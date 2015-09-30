@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<responses>
+    <response file="maybe_someday">Maybe someday</response>
+    <response file="dont_think_so">I don't think so</response>
+    <response file="no">No</response>
+    <response file="try_asking_again">Try asking again</response>
+    <response file="nothing">Nothing</response>
+    <response file="neither">Neither</response>
+    <response file="yes">Yes</response>
+</responses>

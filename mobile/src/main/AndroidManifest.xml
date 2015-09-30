@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choisaucelabs.magicconchshell"
+    android:installLocation="auto" >
+
+    <uses-feature android:name="android.hardware.screen.portrait" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ResponseEditActivity"
+            android:label="@string/response_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EditResponsesTheme" >
+        </activity>
+        <activity
+            android:name=".AddResponseActivity"
+            android:label="@string/title_activity_add_response"
+            android:screenOrientation="portrait"
+            android:theme="@style/AddResponseTheme">
+        </activity>
+    </application>
+
+</manifest>
