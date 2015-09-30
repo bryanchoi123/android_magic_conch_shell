@@ -1,5 +1,5 @@
 # The Magic Conch Shell
-App for the Magic Conch Shell from the TV show Spongebob Squarepants
+App to simulate the experience of using the Magic Conch Shell from the TV show Spongebob Squarepants
 
 ## Description
 ### Mobile
