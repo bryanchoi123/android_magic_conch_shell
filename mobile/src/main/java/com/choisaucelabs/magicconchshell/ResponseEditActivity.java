@@ -22,7 +22,7 @@ public class ResponseEditActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_responses);
 
-        adapter = new ArrayAdapter<Response>(this, R.layout.list_view_element);
+        adapter = new ArrayAdapter<>(this, R.layout.list_view_element);
         responses = new ArrayList<>();
 
        // parse from extras
@@ -44,7 +44,7 @@ public class ResponseEditActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu)
     {
         // Inflate the menu; this adds items to the action bar if it is present.
-        //getMenuInflater().inflate(R.menu.responses_menu_main, menu);
+        getMenuInflater().inflate(R.menu.responses_menu_main, menu);
         return true;
     }
 
