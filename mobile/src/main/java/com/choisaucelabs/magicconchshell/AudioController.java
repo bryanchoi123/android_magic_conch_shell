@@ -30,6 +30,10 @@ public class AudioController implements AudioManager.OnAudioFocusChangeListener,
 
     public int prepareAudio(Uri fileSource)
     {
+        // if there is no sound file, return duration of 0
+        if(fileSource == null)
+            return 0;
+
         // request audio focus
         int result = manager.requestAudioFocus(this, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN_TRANSIENT);
         if(AudioManager.AUDIOFOCUS_REQUEST_GRANTED != result)

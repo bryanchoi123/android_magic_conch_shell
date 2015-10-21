@@ -29,8 +29,8 @@ public class ConchButtonController implements OnClickListener
 
     private void parseResponses()
     {
-        ArrayList<String> responsesList = new ArrayList<String>();
-        ArrayList<Uri> responseFilesList = new ArrayList<Uri>();
+        ArrayList<String> responsesList = new ArrayList<>();
+        ArrayList<Uri> responseFilesList = new ArrayList<>();
 
         XmlPullParser parser = mainActivity.getResources().getXml(R.xml.conch_responses);
 
@@ -54,7 +54,7 @@ public class ConchButtonController implements OnClickListener
             Log.e(TAG, ex.getMessage());
         }
 
-        responses = new ArrayList<Response>();
+        responses = new ArrayList<>();
         for(int i = 0; i<responsesList.size(); i++)
         {
             responses.add(new Response(responsesList.get(i), responseFilesList.get(i)));
@@ -90,9 +90,8 @@ public class ConchButtonController implements OnClickListener
     @Override
     public void onClick(View view)
     {
-        Object[] responseArray = responses.toArray();
         int randIndex = (int)(Math.random()* responses.size());
-        Response randResponse = (Response)responseArray[randIndex];
+        Response randResponse = responses.get(randIndex);
 
         mainActivity.showResponse(randResponse.getResponse(), randResponse.getRecordingLocation());
     }
