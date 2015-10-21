@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 
 public class MainActivity extends AppCompatActivity
@@ -53,7 +52,7 @@ public class MainActivity extends AppCompatActivity
 
     private void editResponses()
     {
-        Intent i = new Intent(this, ResponseEditActivity.class);
+        Intent i = new Intent(this, EditResponseActivity.class);
         ArrayList<Response> responses = buttonController.getResponses();
 
         String[] text = new String[responses.size()];

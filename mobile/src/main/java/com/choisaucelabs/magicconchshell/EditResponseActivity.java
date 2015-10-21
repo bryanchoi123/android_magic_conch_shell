@@ -11,7 +11,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class ResponseEditActivity extends AppCompatActivity
+public class EditResponseActivity extends AppCompatActivity
 {
     private ArrayList<Response> responses;
     private ArrayAdapter<Response> adapter;

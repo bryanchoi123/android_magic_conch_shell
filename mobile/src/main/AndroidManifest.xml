@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ResponseEditActivity"
+            android:name=".EditResponseActivity"
             android:label="@string/response_activity"
             android:screenOrientation="portrait"
             android:theme="@style/EditResponsesTheme" >
