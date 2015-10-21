@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/description"
-        android:text="@string/directions_text"
+        android:text="@string/main_directions_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/directions_horizontal_margin"
@@ -27,7 +27,7 @@
         android:layout_below="@id/description"
         android:layout_centerHorizontal="true"
         android:scaleType="fitCenter"
-        android:contentDescription="@string/image_description"
+        android:contentDescription="@string/main_image_description"
         android:src="@drawable/magic_conch"/>
 
     <ScrollView
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="@dimen/response_text_size"
-            android:text="@string/response_default"
+            android:text="@string/main_response_default"
             android:layout_marginTop="@dimen/response_vertical_margin"
             android:gravity="center"/>
 

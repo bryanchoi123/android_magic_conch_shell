@@ -10,7 +10,7 @@
 
     <TextView
         android:id="@+id/response_text_label"
-        android:text="@string/add_response_label"
+        android:text="@string/add_response_response_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -21,10 +21,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/response_text_label"
-        android:layout_marginLeft="@dimen/add_response_response_text_horizontal_margin"
-        android:layout_marginStart="@dimen/add_response_response_text_horizontal_margin"
-        android:layout_marginBottom="@dimen/add_response_response_text_vertical_margin"
-        android:hint="@string/response_text_hint"/>
+        android:layout_marginLeft="@dimen/add_response_textView_horizontal_margin"
+        android:layout_marginStart="@dimen/add_response_textView_horizontal_margin"
+        android:layout_marginBottom="@dimen/add_response_textView_vertical_margin"
+        android:inputType="text|textCapSentences|textAutoCorrect"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/add_response_response_text_hint"/>
 
     <TextView
         android:id="@+id/response_file_label"
@@ -33,6 +36,52 @@
         android:layout_below="@id/response_text"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="@string/response_file_label"/>
+        android:text="@string/add_response_response_file_label"/>
+
+    <EditText
+        android:id="@+id/response_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/response_file_label"
+        android:layout_marginLeft="@dimen/add_response_textView_horizontal_margin"
+        android:layout_marginStart="@dimen/add_response_textView_horizontal_margin"
+        android:layout_marginBottom="@dimen/add_response_textView_vertical_margin"
+        android:ems="8"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="@string/add_response_default_response_file"/>
+
+    <Button
+        android:id="@+id/browse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/response_file_name"
+        android:layout_toRightOf="@id/response_file_name"
+        android:layout_toEndOf="@id/response_file_name"
+        android:text="@string/add_response_browse_button_label"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/response_file_name"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/add_response_button_horizontal_margin"
+            android:layout_marginEnd="@dimen/add_response_button_horizontal_margin"
+            android:text="@string/add_response_clear_button_label"
+            android:onClick="clearFields"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_response_submit_button_label"/>
+
+    </LinearLayout>
 
 </RelativeLayout>

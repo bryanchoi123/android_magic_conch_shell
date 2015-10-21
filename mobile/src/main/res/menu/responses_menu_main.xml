@@ -5,7 +5,7 @@
       tools:context=".ResponseEditActivity">
 
     <item android:id="@+id/add_response"
-          android:title="@string/add_response"
+          android:title="@string/edit_response_new_response_label"
           app:showAsAction="ifRoom"/>
 
 </menu>

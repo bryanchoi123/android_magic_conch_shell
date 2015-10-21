@@ -1,15 +1,22 @@
 <resources>
-    <string name="app_name">Magic Conch Shell</string>
-    <string name="view_responses_button_label">Edit Responses</string>
-    <string name="directions_text">Ask a question, then tap the Magic Conch Shell for an answer.</string>
-    <string name="image_description">Picture of the Magic Conch Shell</string>
-    <string name="response_default">Ask me a question!</string>
+    <!-- Main Activity -->
+    <string name="main_app_name">Magic Conch Shell</string>
+    <string name="main_view_responses_button_label">Edit Responses</string>
+    <string name="main_directions_text">Ask a question, then tap the Magic Conch Shell for an answer.</string>
+    <string name="main_image_description">Picture of the Magic Conch Shell</string>
+    <string name="main_response_default">Ask me a question!</string>
 
-    <string name="response_activity">Responses</string>
-    <string name="add_response">New Response</string>
+    <!-- Edit Response Activity -->
+    <string name="edit_response_title">Responses</string>
+    <string name="edit_response_new_response_label">New Response</string>
 
-    <string name="title_activity_add_response">Create New Response</string>
-    <string name="add_response_label">Response:</string>
-    <string name="response_text_hint">Ex. \"I don\'t think so.\"</string>
-    <string name="response_file_label">Response File:</string>
+    <!-- Add Response Activity -->
+    <string name="add_response_title">Create New Response</string>
+    <string name="add_response_response_label">Response:</string>
+    <string name="add_response_response_text_hint">Ex. \"I don\'t think so.\"</string>
+    <string name="add_response_response_file_label">Response File:</string>
+    <string name="add_response_default_response_file">No File Chosen</string>
+    <string name="add_response_browse_button_label">Browse</string>
+    <string name="add_response_clear_button_label">Clear</string>
+    <string name="add_response_submit_button_label">Submit</string>
 </resources>

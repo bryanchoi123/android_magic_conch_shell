@@ -4,6 +4,6 @@
       tools:context=".MainActivity">
 
       <item android:id="@+id/edit_responses"
-          android:title="@string/view_responses_button_label"
+          android:title="@string/main_view_responses_button_label"
           app:showAsAction="ifRoom"/>
 </menu>

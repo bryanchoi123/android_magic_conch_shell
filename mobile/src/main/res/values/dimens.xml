@@ -20,7 +20,8 @@
     <dimen name="add_response_label_vertical_margin">12dp</dimen>
     <dimen name="add_response_label_text_size">20sp</dimen>
     <dimen name="add_response_response_text_size">16sp</dimen>
-    <dimen name="add_response_response_text_horizontal_margin">20dp</dimen>
-    <dimen name="add_response_response_text_vertical_margin">15dp</dimen>
+    <dimen name="add_response_textView_horizontal_margin">20dp</dimen>
+    <dimen name="add_response_textView_vertical_margin">10dp</dimen>
+    <dimen name="add_response_button_horizontal_margin">17dp</dimen>
 
 </resources>
